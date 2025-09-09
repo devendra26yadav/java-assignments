@@ -12,9 +12,5 @@ public class HourlyEmployee extends Employee{
     double getPayment(){
         return Math.round(wages*hours);
     }
-    @Override
-    public String toString()
-    {
-        return "\nName : "+super.getFirstName() +" "+super.getLastName()+"\nPaying : $"+getPayment();
-    }
+
 }

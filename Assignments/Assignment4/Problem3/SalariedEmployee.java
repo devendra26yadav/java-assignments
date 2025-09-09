@@ -12,9 +12,5 @@ public class SalariedEmployee extends Employee{
     double getPayment() {
         return Math.round( weeklySalary);
     }
-    @Override
-    public String toString()
-    {
-        return "\nName : "+super.getFirstName() +" "+super.getLastName()+"\nPaying : $"+getPayment();
-    }
+
 }

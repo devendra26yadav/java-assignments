@@ -9,7 +9,6 @@ public class EmployeeTest {
         Employee e5 = new HourlyEmployee("Abby", "Altman", "874302930", 130, 9);
 
         Employee[] employeeSalaryList = findSalaryList(new Employee[]{e1, e2, e3, e4, e5}, 3000);
-
         for(Employee e : employeeSalaryList){
             System.out.println(e);
         }
@@ -91,12 +90,15 @@ Sample Output:
 
 3 Employees are having less than $3000.00 salary
 Name : Bob Noman
+Social Security Number : 37862
 Paying : $1676.0
 
 Name : Jack Topal
+Social Security Number : 89267
 Paying : $1408.0
 
 Name : Abby Altman
+Social Security Number : 874302930
 Paying : $1170.0
 
  */

@@ -1,6 +1,5 @@
 package Assignments.Assignment4.Problem2;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
@@ -31,11 +30,10 @@ public class LightSensor implements  SensorInterface {
     }
 
     @Override
-    public String getLastUpdated() {
+    public void getLastUpdated() {
         LocalTime currentTime = LocalTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh:mm a");
         this.lastUpdated= currentTime.format(formatter).toUpperCase();
-        return lastUpdated;
     }
 
     @Override

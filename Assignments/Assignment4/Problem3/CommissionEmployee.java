@@ -19,9 +19,4 @@ public class CommissionEmployee extends Employee{
         return Math.round(grossSales*commissionRate/100);
     }
 
-    @Override
-    public String toString()
-    {
-        return "\nName : "+super.getFirstName() +" "+super.getLastName()+"\nPaying : $"+getPayment();
-    }
 }

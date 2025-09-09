@@ -3,12 +3,14 @@ package Assignments.Assignment4.Problem4;
 public class ApplianceTest {
 
     public static void main(String[] args) {
-        Appliance[] appliances = new Appliance[4];
-
-        appliances[0] = new Refrigerator(2);
-        appliances[1] = new Microwave(780);
-        appliances[2] = new WashingMachine(58);
-        appliances[3] = new Microwave(983);
+        Appliance[] appliances = {
+                new Refrigerator(2),
+                new Microwave(780),
+                null,
+                new WashingMachine(58),
+                new Microwave(983),
+                null
+        };
 
         for (Appliance electricAppliance : appliances) {
             if (electricAppliance != null) {
@@ -16,8 +18,6 @@ public class ApplianceTest {
                 electricAppliance.performAction();
             }
         }
-
-
     }
 }
 /*

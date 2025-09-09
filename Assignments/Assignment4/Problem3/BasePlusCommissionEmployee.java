@@ -1,19 +1,16 @@
 package Assignments.Assignment4.Problem3;
 
-public class BasePlusCommissionEmployee extends CommissionEmployee{
+public class BasePlusCommissionEmployee extends CommissionEmployee {
     private final double baseSalary;
 
-    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber,double baseSalary) {
+    public BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double baseSalary) {
         super(firstName, lastName, socialSecurityNumber);
-        this.baseSalary=baseSalary;
+        this.baseSalary = baseSalary;
     }
 
     @Override
     double getPayment() {
-        return Math.round(baseSalary+ super.getPayment());
-    }
-    @Override
-    public String toString(){
-        return "\nName : "+super.getFirstName()+" "+super.getLastName()+"\nPaying : $"+getPayment();
+        return Math.round(baseSalary + super.getPayment());
     }
 }
+
